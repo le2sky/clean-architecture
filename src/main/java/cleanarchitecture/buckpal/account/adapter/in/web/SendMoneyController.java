@@ -1,4 +1,4 @@
-package cleanarchitecture.buckpal.adapter.in.web;
+package cleanarchitecture.buckpal.account.adapter.in.web;
 
 import cleanarchitecture.buckpal.account.application.port.in.SendMoneyCommand;
 import cleanarchitecture.buckpal.account.application.port.in.SendMoneyUseCase;
