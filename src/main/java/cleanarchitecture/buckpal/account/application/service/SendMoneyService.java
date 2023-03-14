@@ -2,6 +2,8 @@ package cleanarchitecture.buckpal.account.application.service;
 
 import cleanarchitecture.buckpal.account.application.port.in.SendMoneyCommand;
 import cleanarchitecture.buckpal.account.application.port.in.SendMoneyUseCase;
+import cleanarchitecture.buckpal.account.application.port.out.LoadAccountPort;
+import cleanarchitecture.buckpal.account.application.port.out.UpdateAccountStatePort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,7 +13,6 @@ import org.springframework.transaction.annotation.Transactional;
 public class SendMoneyService implements SendMoneyUseCase {
 
   private final LoadAccountPort loadAccountPort;
-  private final AccountLock accountLock;
   private final UpdateAccountStatePort updateAccountStatePort;
 
   @Override
