@@ -10,7 +10,6 @@ import lombok.Value;
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Account {
 
-  @Getter
   private final AccountId id;
 
   @Getter
