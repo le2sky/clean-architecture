@@ -19,8 +19,8 @@ import org.springframework.transaction.annotation.Transactional;
 public class SendMoneyService implements SendMoneyUseCase {
 
   private final LoadAccountPort loadAccountPort;
-  private final UpdateAccountStatePort updateAccountStatePort;
   private final AccountLock accountLock;
+  private final UpdateAccountStatePort updateAccountStatePort;
   private final MoneyTransferProperties moneyTransferProperties;
 
 
